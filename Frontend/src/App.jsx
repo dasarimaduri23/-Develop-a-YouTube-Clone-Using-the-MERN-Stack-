@@ -1,12 +1,12 @@
 
-import './App.css'
+import './App.css';
 
 function App() {
   
 
   return (
     <>
-      <h1>Youtube clone</h1>
+      <h1 className='border '>Youtube clone</h1>
     </>
   )
 }
