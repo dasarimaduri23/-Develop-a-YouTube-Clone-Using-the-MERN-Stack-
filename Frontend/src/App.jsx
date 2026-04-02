@@ -1,5 +1,4 @@
-
-import './App.css';
+import SideBar from "./Components/SideBar"
 
 function App() {
   
@@ -7,6 +6,8 @@ function App() {
   return (
     <>
       <h1 className='border '>Youtube clone</h1>
+      <SideBar/>
+      
     </>
   )
 }
