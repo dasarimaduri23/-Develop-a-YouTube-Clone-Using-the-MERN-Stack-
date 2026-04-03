@@ -8,7 +8,7 @@ function Avatar({ src, name, size = 40 }) {
       style={{ width: size, height: size }}
       className="relative"
     >
-      
+      {/* IMAGE (same as header logic) */}
       {src && src !== "" && (
         <img
           src={src}
@@ -20,7 +20,7 @@ function Avatar({ src, name, size = 40 }) {
         />
       )}
 
-      {/* LETTER  */}
+      {/* LETTER (same as header) */}
       <div className="w-full h-full rounded-full bg-gray-300 flex items-center justify-center text-gray-700 font-bold">
         {firstLetter}
       </div>
