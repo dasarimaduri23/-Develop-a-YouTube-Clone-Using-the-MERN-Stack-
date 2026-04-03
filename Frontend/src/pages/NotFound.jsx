@@ -12,7 +12,6 @@ function NotFound() {
         <BsYoutube color='#FF0000' size={'3rem'} />
         <span className="notfound-youtube">YouTube</span>
       </div>
-      <div className="notfound-404">OOPs ! enter the correct Path</div>
       <div className="notfound-404">404</div>
       <div className="notfound-message">This page isn't available. Sorry about that.</div>
 

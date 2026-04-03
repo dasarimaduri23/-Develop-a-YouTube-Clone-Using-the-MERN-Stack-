@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useAuth } from '../contexts/AuthContext.jsx' // import context for logged in user
 import YourChannel from '../Components/YourChannel.jsx'; // import your channel
-import CreateChannel from '../Components/CreateChannels.jsx'; // import creat channel
+import CreateChannel from '../Components/CreateChannel.jsx'; // import creat channel
 import { useOutletContext } from 'react-router-dom' // import outlet for props
 
 // Channel page: shows either YourChannel or CreateChannel based on user state

@@ -394,7 +394,7 @@ function VideoPlayer() {
         </div>
 
         {/* Video Description Section */}
-        <div className="mt-4 p-4 rounded-xl bg-gray-100  text-sm dark:text-black">
+        <div className="mt-4 p-4 rounded-xl bg-gray-100 text-sm text-black">
           {/* Meta: Views and Date */}
           <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-gray-600 dark:text-gray-900 mb-2">
             <span>{(video.views || 0).toLocaleString()} views</span>

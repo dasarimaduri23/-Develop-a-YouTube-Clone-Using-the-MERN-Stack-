@@ -59,7 +59,7 @@ function CreateChannel() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
       <div className="bg-[#181818] text-white w-full max-w-lg rounded-xl shadow-xl p-8">
         <h2 className="text-2xl font-bold mb-6">How you'll appear</h2>
 

@@ -37,7 +37,7 @@ const SideBar = ({ sidebarOpen, isMobile, isTablet, isDesktop }) => {
       {/* Overlay for all devices */}
       {sidebarOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed inset-0 bg-black/30 z-40"
           onClick={() => sidebarOpen && setSidebarOpen(false)}
         ></div>
       )}

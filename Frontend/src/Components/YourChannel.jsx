@@ -331,7 +331,7 @@ function YourChannel() {
             <div key={video._id} className="relative">
               <Link to={`/video/${video._id}`}>
                 <img src={video.thumbnail} alt={video.title} className="w-full h-48 object-cover rounded" />
-                <div className="absolute bottom-2 right-2 bg-black bg-opacity-75 text-white px-1 text-sm">{video.duration || "14:45"}</div>
+                <div className="absolute bottom-2 right-2 bg-black/75 text-white px-1 text-sm">{video.duration || "14:45"}</div>
               </Link>
               <div className="mt-2">
                 <h3 className="text-sm font-semibold">{video.title}</h3>
@@ -361,7 +361,7 @@ function YourChannel() {
 
       {/* Edit Channel Model */}
       {showEditChannel && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
           <div className="bg-white p-6 rounded-lg w-full max-w-md text-gray-900 overflow-y-auto max-h-[80vh]">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">Edit Channel Details</h2>
@@ -454,7 +454,7 @@ function YourChannel() {
 
       {/* Upload Video Model */}
       {showUpload && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
           <div className="bg-white p-6 rounded-lg w-full max-w-md text-gray-900">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">Upload Video</h2>
@@ -540,7 +540,7 @@ function YourChannel() {
 
       {/* Edit Video Modal */}
       {showEdit && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
           <div className="bg-white p-6 rounded-lg w-full max-w-md text-gray-900">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">Edit Video</h2>
@@ -626,7 +626,7 @@ function YourChannel() {
 
       {/* Manage Videos Model */}
       {showManageVideos && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
           <div className="bg-white p-6 rounded-lg w-full max-w-md text-gray-900">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">Manage Videos</h2>

@@ -31,11 +31,11 @@ function UserModal({ onClose, setShowModal }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black bg-opacity-30 flex justify-end"
+      className="fixed inset-0 z-[1999] bg-black/10 backdrop-blur-sm transition-opacity duration-300"
       onClick={onClose}
     >
       <div
-        className="w-80 bg-white text-gray-900 rounded-xl shadow-xl m-4 border border-gray-200 overflow-hidden"
+        className="fixed top-14 right-4 z-[2000] w-80 bg-white text-gray-900 rounded-xl shadow-2xl border border-gray-100 overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
