@@ -1,16 +1,37 @@
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import dotenv from 'dotenv';
 
+import userRoutes from './routes/UserRoutes.js';
+import videoRoutes from './routes/videosRoutes.js';
+import commentRoutes from './routes/commentRoutes.js';
+import channelRoutes from './routes/channelRoutes.js';
 
-import express from "express";
-import mongoose from "mongoose";
+dotenv.config();
 const app = express();
 
+app.use(cors());
+app.use(express.json());
 
-mongoose.connect("mongodb://dasarimadurimadhu_db_user:password@ac-ytcg5tp-shard-00-00.ewl5irx.mongodb.net:27017,ac-ytcg5tp-shard-00-01.ewl5irx.mongodb.net:27017,ac-ytcg5tp-shard-00-02.ewl5irx.mongodb.net:27017/?ssl=true&replicaSet=atlas-1aos04-shard-0&authSource=admin&appName=Cluster0")
-.then(() => console.log("✅ DB connected"))
-.catch(err => console.log("❌ Error:",err.message));
+userRoutes(app);
+videoRoutes(app);
+commentRoutes(app);
+channelRoutes(app);
+
+app.get('/', (req, res) => {
+  res.send('YouTube Clone API is running...');
+});
 
 
-app.listen(8080,()=>{
-    console.log("the port is running");
-    
-})
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log('database connected successfully!');
+
+    app.listen(process.env.PORT, () => {
+      console.log(`server is running at port: ${process.env.PORT}`);
+    });
+  })
+  .catch(err => {
+    console.log('database could not be connected:', err);
+  });
