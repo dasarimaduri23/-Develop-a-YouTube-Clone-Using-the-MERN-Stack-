@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
     avatar: {
         type: String,
         trim: true,
-        default: 'https://placehold.co/80x80.png?text=Profile', 
+        default: 'https://placehold.co/80x80.png?text=Profile', // Default avatar URL
     },
     likedVideos: [{
         type: mongoose.Schema.Types.ObjectId,
